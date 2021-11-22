@@ -1,0 +1,171 @@
+.reviews {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  background-color: rgba(244, 249, 249, 1);
+  @media screen and (min-width: $desktop) {
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+}
+.reviews__container {
+  align-items: center;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.reviews__title-container {
+  position: relative;
+}
+.reviews__title {
+  width: 341px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.08em;
+  text-align: center;
+  @media screen and (min-width: $desktop) {
+    font-size: 52px;
+  }
+}
+.reviews__arrow-icon {
+  position: absolute;
+  top: 55px;
+  left: 70px;
+  width: 174px;
+  height: 104px;
+  @media screen and (min-width: $desktop) {
+    top: 91px;
+    left: 39px;
+  }
+}
+.reviews__reviews-container {
+  margin-top: 80px;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    padding: 0 15px;
+    margin-top: 53px;
+  }
+}
+.reviews__primary-reviews-container,
+.reviews__secondary-reviews-container {
+  position: relative;
+  @media screen and (min-width: $desktop) {
+    padding: 30px 15px 0 15px;
+    width: 50%;
+  }
+}
+.reviews__secondary-reviews-container {
+  margin-top: 15px;
+  @media screen and (min-width: $desktop) {
+    margin-top: 0;
+  }
+}
+.reviews__nicolas-review {
+  padding: 25px;
+  background-image: url(images/reviews/nicolas-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media screen and (min-width: $desktop) {
+    padding: 60px;
+  }
+  .reviews__starts-container {
+    display: flex;
+    width: 206px;
+    height: 38px;
+  }
+  .reviews__review-text {
+    margin-top: 29px;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 1.44em;
+    letter-spacing: 0.3px;
+    @media screen and (min-width: $desktop) {
+      font-size: 28px;
+    }
+  }
+  .reviews__reviewer-container {
+    margin-top: 35px;
+  }
+  .reviews__reviewer-avatar {
+    width: 64px;
+  }
+}
+
+.reviews__vera-review {
+  padding: 25px;
+  background-image: url(images/reviews/vera-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media screen and (min-width: $desktop) {
+    padding: 59px;
+  }
+  .reviews__starts-container {
+    display: flex;
+    width: 156px;
+    height: 28px;
+  }
+  .reviews__reviewer-container {
+    margin-top: 29px;
+  }
+  .reviews__review-text {
+    margin-top: 23px;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 1.62em;
+    letter-spacing: 0.3px;
+    @media screen and (min-width: $desktop) {
+      font-size: 18px;
+    }
+  }
+}
+
+.reviews__elise-review {
+  padding: 25px;
+  margin-top: 15px;
+  background-image: url(images/reviews/elise-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media screen and (min-width: $desktop) {
+    padding: 59px;
+    margin-top: 30px;
+  }
+  .reviews__starts-container {
+    display: flex;
+    width: 156px;
+    height: 28px;
+  }
+  .reviews__review-text {
+    margin-top: 19px;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 1.39em;
+    letter-spacing: 0.3px;
+  }
+  .reviews__reviewer-container {
+    margin-top: 27px;
+  }
+
+  .reviews__reviewer-avatar {
+    width: 44px;
+  }
+}
+
+.reviews__reviewer-container {
+  display: flex;
+}
+.reviews__reviewer-avatar {
+  margin-right: 14px;
+}
+.reviews__reviewer-name {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 1.55em;
+}
+.reviews__reviewer-position {
+  font-size: 12px;
+  line-height: 1.6em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $secondary-color;
+}

@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sama</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="backdrop is-hidden"></div>
+
+    <!-- Header -->
+
+    <header class="header section" id="header">
+      <div class="header-main-container">
+        <a href="">
+          <svg class="header__logo">
+            <use href="./symbol-defs.svg#logo"></use>
+          </svg>
+        </a>
+        <button class="menu-button js-menu-button">
+          <svg
+            class="header__menu-icon js-menu-icon"
+            width="24px"
+            height="24px"
+          >
+            <use
+              href="../node_modules/bootstrap-icons/bootstrap-icons.svg#list"
+            ></use>
+          </svg>
+        </button>
+        <div
+          class="header__navigation-container js-navigation-container is-hidden"
+        >
+          <button class="close-button js-close-button">
+            <svg
+              class="header__close-icon js-close-icon is-hidden"
+              width="24px"
+              height="24px"
+            >
+              <use
+                href="../node_modules/bootstrap-icons/bootstrap-icons.svg#x-lg"
+              ></use>
+            </svg>
+          </button>
+
+          <nav class="header__navigation">
+            <a class="header__menu-link" href="">Home</a>
+            <a class="header__menu-link" href="">How it Works</a>
+            <a class="header__menu-link" href="">Why Sama?</a>
+            <a class="header__menu-link" href="">About us</a>
+            <a class="header__menu-link" href="">Coach</a>
+          </nav>
+          <div class="header__button-container">
+            <button class="header__booking-btn">
+              <a href="">Book a Demo</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Hero -->
+
+      <section class="hero section" id="hero">
+        <div class="hero__main-container">
+          <div class="hero__text-container">
+            <h1 class="hero__title">Supercharge your team's development</h1>
+            <p class="hero__text">
+              We’re elevating engagement to make the world a better place by
+              bringing the power of executive coaching to everyone.
+            </p>
+            <form class="hero__form">
+              <input
+                class="hero__input"
+                type="input"
+                placeholder="Your work email"
+              />
+              <input
+                class="hero__submit submit"
+                type="submit"
+                value="Learn more"
+              />
+            </form>
+            <ul class="hero__item-list">
+              <li class="hero__item">
+                <span>1:1 coaching</span>
+                <svg class="header__logo" width="107px" height="36px">
+                  <use href="./symbol-defs.svg#path"></use>
+                </svg>
+              </li>
+              <li class="hero__item">
+                <span>Empowering</span>
+                <svg class="header__logo" width="107px" height="36px">
+                  <use href="./symbol-defs.svg#path"></use>
+                </svg>
+              </li>
+              <li class="hero__item">
+                <span>Inclusive</span>
+                <svg class="header__logo" width="107px" height="36px">
+                  <use href="./symbol-defs.svg#path"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+          <div class="hero__img-container"></div>
+        </div>
+      </section>
+
+      <!-- Elements -->
+
+      <section class="element section" id="element">
+        <div class="element__container">
+          <ul class="element__list">
+            <li class="element__item">
+              <div class="element__item-data-container">
+                <span class="element__item-number">2</span
+                ><span class="element__item-symbol">x</span>
+              </div>
+              <p class="element__item-comment">More inclusive</p>
+            </li>
+            <li class="element__item">
+              <div class="element__item-data-container">
+                <span class="element__item-symbol">+</span
+                ><span class="element__item-number">65</span
+                ><span class="element__item-symbol">%</span>
+              </div>
+              <p class="element__item-comment">Engagement</p>
+            </li>
+            <li class="element__item">
+              <div class="element__item-data-container">
+                <span class="element__item-symbol">+</span
+                ><span class="element__item-number">53</span
+                ><span class="element__item-symbol">%</span>
+              </div>
+              <p class="element__item-comment">Productivity</p>
+            </li>
+            <li class="element__item">
+              <div class="element__item-data-container">
+                <span class="element__item-symbol">+</span
+                ><span class="element__item-number">80</span
+                ><span class="element__item-symbol">%</span>
+              </div>
+              <p class="element__item-comment">Resilience</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Getting started -->
+
+      <section class="getting-started section" id="getting-started">
+        <div class="getting-started__container container">
+          <div class="getting-started__beckground-container">
+            <h2 class="getting-started__title">
+              <p class="getting-started__first-title">Getting started is</p>
+              <p class="getting-started__second-title">as easy as 1, 2, 3...</p>
+            </h2>
+            <ul class="getting-started__list">
+              <li class="getting-started__item">
+                <a href=""
+                  ><div class="getting-started__icon-container">
+                    <svg class="getting-started__item-icon">
+                      <use href="./symbol-defs.svg#oval"></use>
+                    </svg>
+                    <p class="getting-started__item-order">1</p>
+                  </div></a
+                >
+                <pre class="getting-started__item-text">
+              Your company signs
+              up to Sama.
+            </pre
+                >
+              </li>
+              <li class="getting-started__item">
+                <a href="">
+                  <div class="getting-started__icon-container">
+                    <svg class="getting-started__item-icon">
+                      <use href="./symbol-defs.svg#oval"></use>
+                    </svg>
+                    <p class="getting-started__item-order">2</p>
+                  </div>
+                </a>
+                <pre class="getting-started__item-text">
+              Employees match with
+              their professional coach.
+            </pre
+                >
+              </li>
+              <li class="getting-started__item">
+                <a href="">
+                  <div class="getting-started__icon-container">
+                    <svg class="getting-started__item-icon">
+                      <use href="./symbol-defs.svg#oval"></use>
+                    </svg>
+                    <p class="getting-started__item-order">3</p>
+                  </div>
+                </a>
+                <pre class="getting-started__item-text">
+              Employees begin working
+              with their coach via chat,
+              voice or video call.
+            </pre
+                >
+              </li>
+            </ul>
+            <img
+              class="getting-started__img"
+              src="./images/getting-started/decorative-arrow.png"
+              alt="build stronger teams"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Champion their career -->
+
+      <section class="champion section" id="champion">
+        <div class="champion__container container">
+          <div class="champion__background-container"></div>
+          <div class="champion__text-container">
+            <h2 class="champion__title">Champion their career</h2>
+            <p class="champion__text">
+              Sama connects your employees to the best professional coach for
+              them. Built to seamlessly fit into your organisation, and powered
+              by sophisticated technology and our team of highly experienced
+              coaches.
+            </p>
+            <a class="champion__link link" href="">Book a demo</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured insights -->
+
+      <section class="featured-insights section" id="featured-insights">
+        <div class="featured-insights__container container">
+          <p class="featured-insights__title">Featured insights</p>
+          <ul class="featured-insights__list">
+            <li class="featured-insights__item">
+              <img
+                class="featured-insights__item-img"
+                src="./images/featured-insights/Photo-1.png"
+                alt=""
+              />
+              <div class="featured-insights__item-text-container">
+                <div>
+                  <p class="featured-insights__item-title">Coaching</p>
+                  <h3 class="featured-insights__item-text">
+                    How coaching helps your team be engaged during the Covid era
+                  </h3>
+                </div>
+                <p class="featured-insights__item-date">
+                  Published on January 27th, 2021
+                </p>
+              </div>
+            </li>
+            <li class="featured-insights__item">
+              <img
+                class="featured-insights__item-img"
+                src="./images/featured-insights/Photo-2.png"
+                alt=""
+              />
+              <div class="featured-insights__item-text-container">
+                <div>
+                  <p class="featured-insights__item-title">Productivity</p>
+                  <h3 class="featured-insights__item-text">
+                    Why coaching should be available to every employee
+                  </h3>
+                </div>
+                <p class="featured-insights__item-date">
+                  Published on January 12th, 2021
+                </p>
+              </div>
+            </li>
+            <li class="featured-insights__item">
+              <img
+                class="featured-insights__item-img"
+                src="./images/featured-insights/Photo-3.png"
+                alt=""
+              />
+              <div class="featured-insights__item-text-container">
+                <div>
+                  <p class="featured-insights__item-title">Coaching</p>
+                  <h3 class="featured-insights__item-text">
+                    How coaching promotes inclusive teams
+                  </h3>
+                </div>
+                <p class="featured-insights__item-date">
+                  Published on November 19th, 2020
+                </p>
+              </div>
+            </li>
+          </ul>
+          <a class="featured-insights__link" href="">Read all articles</a>
+        </div>
+      </section>
+
+      <!-- Elevate engagement -->
+
+      <section class="elevate-engagement section">
+        <div class="elevate-engagement__container container">
+          <div class="elevate-engagement__test-container">
+            <h2 class="elevate-engagement__title">Elevate engagement</h2>
+            <p class="elevate-engagement__text">
+              Our powerful digital platform and proprietary algorithm matches
+              people to the right coach - based on their professional
+              development needs and personal profile.
+            </p>
+            <a class="elevate-engagement__link link" href=""
+              >Elevate engagement</a
+            >
+          </div>
+          <div class="elevate-engagement__background-container"></div>
+        </div>
+      </section>
+
+      <!-- Don't just take our word for it -->
+
+      <section class="reviews section">
+        <div class="reviews__container container">
+          <div class="reviews__title-container">
+            <h2 class="reviews__title">Don't just take our word for it</h2>
+            <svg class="reviews__arrow-icon">
+              <use href="./symbol-defs.svg#icon-arrow"></use>
+            </svg>
+          </div>
+          <div class="reviews__reviews-container">
+            <div class="reviews__primary-reviews-container">
+              <div class="reviews__nicolas-review">
+                <div class="reviews__starts-container">
+                  <svg>
+                    <use href="./symbol-defs.svg#star"></use>
+                  </svg>
+                  <svg>
+                    <use href="./symbol-defs.svg#star-1"></use>
+                  </svg>
+                  <svg>
+                    <use href="./symbol-defs.svg#star"></use>
+                  </svg>
+                  <svg>
+                    <use href="./symbol-defs.svg#star-1"></use>
+                  </svg>
+                  <svg>
+                    <use href="./symbol-defs.svg#star"></use>
+                  </svg>
+                </div>
+                <p class="reviews__review-text">
+                  Each of our team member is getting precious help in their
+                  professional development and can build a program that suit
+                  their needs and ambitions.
+                </p>
+                <div class="reviews__reviewer-container">
+                  <img
+                    class="reviews__reviewer-avatar"
+                    src="./images/reviews/photo-2.png"
+                    alt="avatar"
+                  />
+                  <div class="reviews__name-and-position-container">
+                    <p class="reviews__reviewer-name">Nicolas</p>
+                    <p class="reviews__reviewer-position">COO at CFTE</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__secondary-reviews-container">
+              <div class="reviews__vera-review">
+                <div class="reviews__starts-container">
+                  <svg>
+                    <use href="./symbol-defs.svg#star-1"></use>
+                  </svg>
+                  <svg>
+                    <use href="./symbol-defs.svg#star"></use>
+                  </svg>
+                  <svg>
+                    <use href="./symbol-defs.svg#star-1"></use>
+                  </svg>
+                  <svg>
+                    <use href="./symbol-defs.svg#star"></use>
+                  </svg>
+                  <svg>
+                    <use href="./symbol-defs.svg#star-1"></use>
+                  </svg>
+                </div>
+                <p class="reviews__review-text">
+                  The design of the Sama app allowed for the digital session to
+                  take place seamlessly!
+                </p>
+                <div class="reviews__reviewer-container">
+                  <div class="reviews__name-and-position-container">
+                    <p class="reviews__reviewer-name">Vera</p>
+                    <p class="reviews__reviewer-position">
+                      Partnership Associate at CFTE
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="reviews__elise-review">
+                <div class="reviews__starts-container">
+                  <svg>
+                    <use href="./symbol-defs.svg#star"></use>
+                  </svg>
+                  <svg>
+                    <use href="./symbol-defs.svg#star-1"></use>
+                  </svg>
+                  <svg>
+                    <use href="./symbol-defs.svg#star"></use>
+                  </svg>
+                  <svg>
+                    <use href="./symbol-defs.svg#star-1"></use>
+                  </svg>
+                  <svg>
+                    <use href="./symbol-defs.svg#star"></use>
+                  </svg>
+                </div>
+                <p class="reviews__review-text">
+                  Sama matched me with a Coach who helped me see that I have
+                  exactly what I need to succeed in business (and life)!
+                </p>
+                <div class="reviews__reviewer-container">
+                  <img
+                    class="reviews__reviewer-avatar"
+                    src="./images/reviews/photo-3.png"
+                    alt="avatar"
+                  />
+                  <div class="reviews__name-and-position-container">
+                    <p class="reviews__reviewer-name">Elise Kayfetz</p>
+                    <p class="reviews__reviewer-position">Toronto, Canada</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sign up -->
+
+      <section class="sign-up section">
+        <div class="sign-up__container container">
+          <svg class="sign-up__upper-plain-icon">
+            <use href="./symbol-defs.svg#plane"></use>
+          </svg>
+          <p class="sign-up__subtitle">Stay in touch</p>
+          <h2 class="sign-up__title">Sign up to our newsletter</h2>
+          <form class="sign-up__form">
+            <input
+              class="sign-up__input"
+              type="input"
+              placeholder="Your email"
+            />
+            <input
+              class="sign-up__submit submit"
+              type="submit"
+              value="Subscribe"
+            />
+          </form>
+          <svg class="sign-up__lower-plain-icon">
+            <use href="./symbol-defs.svg#plane"></use>
+          </svg>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer section">
+      <div class="footer__container container">
+        <svg class="footer__logo">
+          <a href=""></a>
+          <use href="./symbol-defs.svg#logo"></use>
+        </svg>
+        <div class="footer__nav-and-info-container">
+          <div class="footer__nav-container">
+            <div class="footer__nav">
+              <p class="footer__nav-container__title">Sitemap</p>
+              <ul class="footer__nav-container__list">
+                <li class="footer__nav-container__item">
+                  <a href="">Home</a>
+                </li>
+                <li class="footer__nav-container__item">
+                  <a href="">Our answer</a>
+                </li>
+                <li class="footer__nav-container__item">
+                  <a href="">Coaching</a>
+                </li>
+                <li class="footer__nav-container__item">
+                  <a href="">Platform</a>
+                </li>
+                <li class="footer__nav-container__item">
+                  <a href="">About Sama</a>
+                </li>
+                <li class="footer__nav-container__item">
+                  <a href="">Coach</a>
+                </li>
+                <li class="footer__nav-container__item">
+                  <a href="">Contact us</a>
+                </li>
+                <li class="footer__nav-container__item icon-after">
+                  <a href="">Book a demo</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__social">
+              <p class="footer__nav-container__title">Social</p>
+              <ul
+                class="footer__nav-container__list footer__nav-container__social-list"
+              >
+                <li class="footer__nav-container__item icon-after">
+                  <a href="">
+                    <p class="footer__nav-container__item-name">LinkedIn</p>
+                    <svg class="footer__nav-container__social-icon bi">
+                      <use
+                        href="../node_modules/bootstrap-icons/bootstrap-icons.svg#linkedin"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__nav-container__item icon-after">
+                  <a href="">
+                    <p class="footer__nav-container__item-name">Instagram</p>
+                    <svg class="footer__nav-container__social-icon bi">
+                      <use
+                        href="../node_modules/bootstrap-icons/bootstrap-icons.svg#instagram"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__nav-container__item icon-after">
+                  <a href="">
+                    <p class="footer__nav-container__item-name">Facebook</p>
+                    <svg class="footer__nav-container__social-icon bi">
+                      <use
+                        href="../node_modules/bootstrap-icons/bootstrap-icons.svg#facebook"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__nav-container__item icon-after">
+                  <a href="">
+                    <p class="footer__nav-container__item-name">Twitter</p>
+                    <svg class="footer__nav-container__social-icon bi">
+                      <use
+                        href="../node_modules/bootstrap-icons/bootstrap-icons.svg#twitter"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__get-app">
+              <p class="footer__nav-container__title">Get the app</p>
+              <ul class="footer__nav-container__list footer__get-app__list">
+                <li class="footer__nav-container__item icon-after">
+                  <a href="">
+                    <p class="footer__nav-container__item-name">AppStore</p>
+                    <svg class="footer__nav-container__get-app-icon">
+                      <use href="./symbol-defs.svg#app-store" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__nav-container__item icon-after">
+                  <a href="">
+                    <p class="footer__nav-container__item-name">Google play</p>
+                    <svg class="footer__nav-container__get-app-icon">
+                      <use href="./symbol-defs.svg#google-play" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__info">
+            <pre class="footer__info__copyright">
+              Copyright © 2021 Sama Europe Ltd. GDPR compliant.
+              71-75 Shelton St, Covent Garden, London WC2H 9JQ.
+            </pre>
+            <div class="footer__info__privacy-police-container">
+              <p class="footer__info__privacy">
+                <a href=""> Terms and Conditions </a>
+              </p>
+              <p class="footer__info__police">
+                <a href=""> Privacy Policy </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="backdrop js-backdrop is-hidden"></div>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+.element {
+  margin-bottom: 80px;
+}
+.element__container {
+  max-width: $mobile;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: $desktop) {
+    max-width: none;
+    width: $desktop;
+  }
+}
+.element__list {
+  padding: 15px 0;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.element__item {
+  text-align: center;
+  @media screen and (max-width: calc(#{$desktop} - 1px)) {
+    padding: 15px 33% 15px 0;
+    &:nth-child(even) {
+      padding: 15px 0 15px 33%;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    width: calc(#{$desktop} / 4);
+    padding-bottom: 6px;
+  }
+}
+.element__item-symbol {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.3em;
+}
+.element__item-number {
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 1.36em;
+}
+.element__item-comment {
+  min-height: 25px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.54em;
+  letter-spacing: 0.3px;
+}

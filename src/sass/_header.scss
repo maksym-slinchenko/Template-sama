@@ -1,0 +1,106 @@
+.header-main-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  max-width: $mobile;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: $desktop) {
+    padding: 13px 48px;
+    max-width: unset;
+    width: $desktop;
+  }
+}
+.header__logo {
+  display: block;
+  width: 107px;
+  height: 36px;
+}
+
+.header__navigation-container {
+  position: absolute;
+  z-index: 10;
+  top: 0px;
+  width: 80%;
+  border-radius: 5px;
+  background-color: white;
+  transition: opacity 0.25s linear;
+  right: 0px;
+  @media screen and (min-width: $desktop) {
+    position: static;
+    display: flex;
+    width: auto;
+    border-radius: 0;
+    background-color: unset;
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.menu-button,
+.close-button {
+  border: none;
+  background-color: unset;
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+.close-button {
+  position: absolute;
+  top: 11px;
+  right: 10px;
+}
+.header__navigation {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 578px;
+    padding: 0 40px 0 20px;
+  }
+}
+.header__menu-link {
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.65em;
+  padding: 10px 15px;
+  border-bottom: 1px solid $secondary-color;
+  &:hover,
+  &:focus {
+    color: $primary-color;
+  }
+  @media screen and (min-width: $desktop) {
+    border-bottom: unset;
+    padding: unset;
+  }
+}
+.header__button-container {
+  padding: 5px;
+  @media screen and (min-width: $desktop) {
+    padding: unset;
+  }
+}
+.header__booking-btn {
+  padding-left: 24px;
+  padding-right: 24px;
+  margin: 0;
+  height: 37px;
+  background: #007188;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.65em;
+  color: white;
+  border: none;
+  @media screen and (min-width: $desktop) {
+    min-width: 145px;
+    min-height: 56px;
+  }
+  &:hover,
+  &:focus {
+    background-color: $primary-color;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}

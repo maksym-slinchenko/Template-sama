@@ -1,0 +1,103 @@
+.getting-started__container {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.getting-started__beckground-container {
+  background-color: rgba(255, 238, 242, 1);
+  position: relative;
+  padding: 30px 15px;
+  @media screen and (min-width: $desktop) {
+    background-color: rgba(255, 238, 242, 0);
+    background-image: url(/images/getting-started/background-area.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 120px 85px;
+  }
+}
+.getting-started__title {
+  text-align: center;
+  font-weight: bold;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 68px;
+  }
+}
+.getting-started__first-title {
+  font-size: 36px;
+  line-height: 1.08em;
+  @media screen and (min-width: $desktop) {
+    font-size: 52px;
+  }
+}
+.getting-started__second-title {
+  font-size: 32px;
+  line-height: 1.17em;
+  @media screen and (min-width: $desktop) {
+    font-size: 48px;
+  }
+}
+.getting-started__list {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    width: 970px;
+  }
+}
+.getting-started__item {
+  margin-top: 15px;
+  @media screen and (min-width: $desktop) {
+    margin-top: 0;
+    width: 33.33%;
+  }
+}
+.getting-started__icon-container {
+  position: relative;
+  text-align: center;
+}
+.getting-started__item-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 57px;
+  height: 60px;
+  stroke-width: 1.0667;
+  &:hover,
+  &:focus {
+    stroke-width: 1.5484;
+  }
+  &:hover + .getting-started__item-order {
+    font-weight: bold;
+  }
+}
+.getting-started__item-order {
+  font-size: 20px;
+  line-height: 3em;
+  color: #002e8c;
+}
+.getting-started__item-text {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.46em;
+  letter-spacing: 0.3px;
+  white-space: pre-line;
+  @media screen and (min-width: $desktop) {
+    margin-top: 30px;
+    font-size: 21px;
+  }
+}
+.getting-started__img {
+  position: absolute;
+  right: 10px;
+  bottom: -52px;
+  width: 130px;
+  @media screen and (min-width: $desktop) {
+    right: 38px;
+    bottom: -42px;
+    width: 179px;
+    transform: translate(0%, 0%);
+  }
+}

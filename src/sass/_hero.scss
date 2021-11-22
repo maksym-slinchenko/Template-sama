@@ -1,0 +1,128 @@
+.hero {
+  position: relative;
+  background: transparent;
+  color: black;
+  margin-bottom: 30px;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 79px;
+  }
+}
+.hero__main-container {
+  display: flex;
+  max-width: $mobile;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: $desktop) {
+    max-width: none;
+    width: $desktop;
+    background-color: rgb(255, 243, 241);
+  }
+}
+.hero__text-container {
+  padding: 15px;
+  background-image: linear-gradient(
+      rgba(255, 243, 241, 0.7),
+      rgba(255, 243, 241, 0.7)
+    ),
+    url(/images/hero/image@0.5.png);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  @media screen and (min-width: $desktop) {
+    padding: 141px 34px 173px 135px;
+    width: 50%;
+    background: none;
+  }
+}
+.hero__title {
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 0.95em;
+  @media screen and (min-width: $desktop) {
+    padding-right: 101px;
+    font-size: 72px;
+  }
+}
+.hero__text {
+  margin-top: 15px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.6em;
+  @media screen and (min-width: $desktop) {
+    margin-top: 45px;
+    font-size: 21px;
+  }
+}
+.hero__form {
+  position: relative;
+  margin-top: 15px;
+  @media screen and (min-width: $desktop) {
+    margin-top: 35px;
+    padding-right: 101px;
+  }
+}
+.hero__input {
+  min-height: 46px;
+  width: 100%;
+  padding: 0 5px 0 10px;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.07);
+  border-radius: 50px;
+  font-size: 16px;
+  line-height: 1.87em;
+  letter-spacing: 0.3px;
+  @media screen and (min-width: $desktop) {
+    min-height: 82px;
+    font-size: 18px;
+    padding: 0 5px 0 37px;
+  }
+}
+.hero__submit {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 4px;
+  padding: 0 5px;
+  min-height: 38px;
+  min-width: 110px;
+  @media screen and (min-width: $desktop) {
+    right: 106px;
+    min-height: 69px;
+    min-width: 162px;
+  }
+}
+
+.hero__item-list {
+  margin-top: 15px;
+  @media screen and (min-width: $desktop) {
+    margin-top: 33px;
+    padding: 0 0 0 10px;
+  }
+}
+.hero__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 35px;
+  padding: 0 15px 0 30px;
+  background-color: rgba(255, 221, 215, 1);
+  border-radius: 50%;
+  font-size: 14px;
+  line-height: 1.51em;
+  @media screen and (min-width: $desktop) {
+    padding: 0 153px 0 34px;
+  }
+}
+
+.hero__img-container {
+  display: none;
+  @media screen and (min-width: $desktop) {
+    display: block;
+    width: calc(#{$desktop} / 2);
+    background-image: url(/images/hero/image@4.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    clip-path: polygon(0 0, 38px 100%, 100% 100%, 100% 0);
+  }
+}
